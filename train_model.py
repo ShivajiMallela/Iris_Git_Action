@@ -82,7 +82,7 @@ def plot_confusion_matrix(cm, target_names, title='Confusion Matrix', normalize=
 
 plot_confusion_matrix(cm_lr, target_names=dataset.target_names, title='Logistic Regression Confusion Matrix')
 
-with open('classification_report_lr.txt', 'w') as f:
+with open('report.txt', 'w') as f:
     f.write("logistic regression train accuracy: {:.2f}%\n".format(train_accuracy_lr))
     f.write("logistic regression test accuracy: {:.2f}%\n".format(test_accuracy_lr))
     f.write("F1 Score: {:.4f}\n".format(f1_score_lr))
