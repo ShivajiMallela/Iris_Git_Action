@@ -17,7 +17,7 @@ jobs:
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-        run:
+        run: |
           pip install -r requirements.txt
                     
           python train_model.py
@@ -29,4 +29,5 @@ jobs:
           echo '![](./confusion_matrix.png "confusion_matrix")' >> report1.md
 
           cat report.md report1.md > combined_file.md
+          
           cml comment create combined_file.md
