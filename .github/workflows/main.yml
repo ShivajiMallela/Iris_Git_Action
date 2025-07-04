@@ -23,7 +23,7 @@ jobs:
           python train_model.py
 
           echo "RF AND LR Model Score" > report.md
-          cat report.txt
+          cat report.txt >> report.md
 
           echo "Confusion Matrix" > report1.md
           echo '![](./confusion_matrix.png "confusion_matrix")' >> report1.md
