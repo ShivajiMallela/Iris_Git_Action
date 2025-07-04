@@ -19,6 +19,7 @@ jobs:
 
         run:
           pip install -r requirements.txt
+                    
           python train_model.py
 
           echo "RF AND LR Model Score" > report.md
